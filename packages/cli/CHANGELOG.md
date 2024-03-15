@@ -1,5 +1,11 @@
 # @openapi-io-ts/cli
 
+## 0.6.0
+
+### Minor Changes
+
+- Add support for generating `#/components/responses` with recursion
+
 ## 0.5.0
 
 ### Minor Changes
