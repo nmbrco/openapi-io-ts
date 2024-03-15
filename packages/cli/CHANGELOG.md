@@ -1,5 +1,11 @@
 # @openapi-io-ts/cli
 
+## 0.6.1
+
+### Patch Changes
+
+- Publish over a borked 0.6.0 release
+
 ## 0.6.0
 
 ### Minor Changes
