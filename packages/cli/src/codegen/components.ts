@@ -142,11 +142,11 @@ function writeRequestBodyFile(
     ),
     RTE.bind("body", () => RTE.right(generateOperationBody(parsedBody))),
     RTE.map(
-      ({ schema, body }) => `import { OperationBody } from "${RUNTIME_PACKAGE}";
-      import * as t from "io-ts";
-      import * as schemas from "../schemas";
+      ({ schema, body }) => `${getImports()}
+      import { OperationBody } from "${RUNTIME_PACKAGE}";
+
       ${schema}
-      
+
       export const ${parsedBody.name}: OperationBody = ${body}`
     ),
     RTE.chain((content) =>
