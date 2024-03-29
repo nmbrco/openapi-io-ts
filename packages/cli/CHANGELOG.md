@@ -1,5 +1,11 @@
 # @openapi-io-ts/cli
 
+## 0.6.2
+
+### Patch Changes
+
+- Fix issues with response, request body, and operation generation
+
 ## 0.6.1
 
 ### Patch Changes
