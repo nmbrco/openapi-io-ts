@@ -122,7 +122,11 @@ function generateFileContent(
   const content = `import * as t from "io-ts";
   import type { RequestFunction } from "${RUNTIME_PACKAGE}";
   import * as schemas from "../${SCHEMAS_PATH}";
-  import * as parameters from "../${PARAMETERS_PATH}";
+  ${
+    operation.parameters.length > 0
+      ? `import * as parameters from "../${PARAMETERS_PATH}";`
+      : ""
+  }
   import * as responses from "../${RESPONSES_PATH}";
   import * as requestBodies from "../${REQUEST_BODIES_PATH}";
 
