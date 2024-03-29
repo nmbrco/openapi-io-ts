@@ -358,7 +358,7 @@ function getReturnType(
 
       const staticType =
         type.kind === "TypeDeclaration"
-          ? `${getItemOrRefPrefix(response)}${type.name}`
+          ? `${getItemOrRefPrefix(successfulResponse)}${type.name}`
           : gen.printStatic(type);
 
       return staticType;

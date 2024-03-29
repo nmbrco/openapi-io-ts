@@ -97,7 +97,7 @@ function generateTagOperations(tag: string, operationIds: string[]): string {
 }
 
 function tagServiceBuilderName(tag: string): string {
-  return `${tagName(tag)}ServiceBuilder`;
+  return `${tagName(tag).replace(/\s+/g, "")}ServiceBuilder`;
 }
 
 function tagName(tag: string, casing: CapitalizeCasing = "camel"): string {

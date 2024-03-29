@@ -18,7 +18,7 @@ import {
 } from "./common";
 import { CodegenContext, CodegenRTE } from "./context";
 import { generateOperationParameter } from "./parameter";
-import { generateComponentResponse } from "./response";
+import { generateResponse } from "./response";
 import { generateSchema } from "./schema";
 import * as gen from "io-ts-codegen";
 
@@ -108,7 +108,7 @@ function writeResponseFile(
   response: ParsedItem<ParsedResponse>
 ): CodegenRTE<void> {
   return pipe(
-    generateComponentResponse(response),
+    generateResponse(response),
     RTE.map(
       (code) => `import * as t from "io-ts";
       import * as schemas from "../schemas";
