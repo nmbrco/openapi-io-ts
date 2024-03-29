@@ -1,5 +1,11 @@
 # @openapi-io-ts/cli
 
+## 0.6.3
+
+### Patch Changes
+
+- Fix issues with parameters imports in operation codegen
+
 ## 0.6.2
 
 ### Patch Changes
