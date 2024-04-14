@@ -1,5 +1,11 @@
 # @openapi-io-ts/cli
 
+## 0.6.5
+
+### Patch Changes
+
+- Fix workspace publish
+
 ## 0.6.4
 
 ### Patch Changes

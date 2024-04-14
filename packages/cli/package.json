@@ -1,6 +1,6 @@
 {
   "name": "@nmbrco/openapi-io-ts-cli",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "description": "OpenAPI code generation tool with validation powered by io-ts",
   "keywords": [
     "openapi",
