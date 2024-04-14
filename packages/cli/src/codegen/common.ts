@@ -21,7 +21,7 @@ export const RUNTIME_PACKAGE = "@openapi-io-ts/runtime";
 export function getImports(): string {
   return `import * as t from "io-ts";
     import * as schemas from "./";
-    import { DateFromISOString } from "io-ts-types/DateFromISOString";
+    import { DateFromISOString } from "io-ts-types/lib/DateFromISOString.js";
     `;
 }
 

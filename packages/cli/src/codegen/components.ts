@@ -67,7 +67,7 @@ function getSchemaFileImports(
     }
 
     if (d === "DateFromISOString") {
-      return `import { DateFromISOString } from "io-ts-types/DateFromISOString"`;
+      return `import { DateFromISOString } from "io-ts-types/lib/DateFromISOString.js"`;
     }
 
     return "";
