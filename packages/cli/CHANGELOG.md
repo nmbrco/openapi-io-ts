@@ -1,5 +1,11 @@
 # @openapi-io-ts/cli
 
+## 0.6.4
+
+### Patch Changes
+
+- Fix import error for DateFromISOString
+
 ## 0.6.3
 
 ### Patch Changes
